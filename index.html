@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Minha Página - Tecnologia</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #0f172a;
-            color: white;
-            margin: 0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo da Tecnologia</title>
 
-        header {
-            background-color: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0a0f2c, #001f3f);
+    color: white;
+    text-align: center;
+}
 
-        section {
-            padding: 20px;
-        }
+header {
+    background: #0d1b2a;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
 
-        h1 {
-            color: #38bdf8;
-        }
+section {
+    padding: 30px;
+}
 
-        button {
-            background-color: #38bdf8;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 10px;
-        }
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #00b4ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        button:hover {
-            background-color: #0ea5e9;
-        }
-    </style>
+button:hover {
+    background: #0090cc;
+    transform: scale(1.1);
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+img {
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function mostrarMensagem() {
+    alert("🔥 A Inteligência Artificial tá dominando o mundo!");
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
-    <h1>🌐 Mundo da Tecnologia</h1>
-    <p>Explorando o futuro com Inteligência Artificial</p>
+🌐 Mundo da Tecnologia
 </header>
 
-<section>
-    <h2>O que é IA?</h2>
-    <p>
-        A Inteligência Artificial (IA) é uma tecnologia que permite que máquinas pensem, aprendam e tomem decisões.
-    </p>
-
-    <h2>Por que é importante?</h2>
-    <p>
-        A IA está em celulares, jogos, redes sociais e até carros. Ela facilita nossa vida e cria novas oportunidades.
-    </p>
-
-    <button onclick="mensagem()">Clique aqui</button>
+<section class="card">
+<h2>O que é IA?</h2>
+<p>A Inteligência Artificial permite que máquinas aprendam e tomem decisões.</p>
 </section>
 
-<script>
-    function mensagem() {
-        alert("Você clicou! 🚀 Bem-vindo ao futuro da tecnologia!");
-    }
-</script>
+<section class="card">
+<h2>Por que é importante?</h2>
+<p>A IA está em celulares, jogos e até carros, facilitando a vida.</p>
+
+<button onclick="mostrarMensagem()">Clique aqui</button>
+</section>
+
+<section class="card">
+<h2>Imagem sobre IA</h2>
+<img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/ai-2026816_1280.png">
+</section>
 
 </body>
 </html>
